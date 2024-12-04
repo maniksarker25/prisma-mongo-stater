@@ -1,0 +1,231 @@
+Wed Dec 04 2024 11:9:38 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of undefined (reading 'email')
+Wed Dec 04 2024 11:11:8 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "password"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'user' | 'rider' | 'vendor' | 'superAdmin'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'MALE' | 'FEMALE'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "gender"
+    ],
+    "message": "Required"
+  }
+]
+Wed Dec 04 2024 11:12:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "password"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'user' | 'rider' | 'vendor' | 'superAdmin'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'MALE' | 'FEMALE'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "gender"
+    ],
+    "message": "Required"
+  }
+]
+Wed Dec 04 2024 11:12:22 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "password"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'user' | 'rider' | 'vendor' | 'superAdmin'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'MALE' | 'FEMALE'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "gender"
+    ],
+    "message": "Required"
+  }
+]
+Wed Dec 04 2024 11:12:57 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'user' | 'rider' | 'vendor' | 'superAdmin'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'MALE' | 'FEMALE'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "gender"
+    ],
+    "message": "Required"
+  }
+]
+Wed Dec 04 2024 11:13:14 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'user' | 'rider' | 'vendor' | 'superAdmin'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'MALE' | 'FEMALE'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "gender"
+    ],
+    "message": "Required"
+  }
+]
+Wed Dec 04 2024 11:14:56 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `transactionClient.normalUser.create()` invocation in
+D:\Projects\prisma\src\app\modules\user\user.service.ts:43:69
+
+  40 await transactionClient.user.create({
+  41   data: userDataPayload,
+  42 });
+→ 43 const createNormalUserData = await transactionClient.normalUser.create({
+       data: {
+         name: "John Doe",
+         email: "devsmanik@gmail.com",
+         contactNumber: "1234567890",
+     +   gender: Gender
+       }
+     })
+
+Argument `gender` is missing.
+Wed Dec 04 2024 11:15:51 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `transactionClient.normalUser.create()` invocation in
+D:\Projects\prisma\src\app\modules\user\user.service.ts:43:69
+
+  40 await transactionClient.user.create({
+  41   data: userDataPayload,
+  42 });
+→ 43 const createNormalUserData = await transactionClient.normalUser.create({
+       data: {
+         name: "John Doe",
+         email: "devsmanik@gmail.com",
+         contactNumber: "1234567890",
+     +   user: {
+     +     create: UserCreateWithoutNormalUserInput | UserUncheckedCreateWithoutNormalUserInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutNormalUserInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing.
+Wed Dec 04 2024 11:33:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ This email already exists
+Wed Dec 04 2024 11:33:22 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ This email already exists

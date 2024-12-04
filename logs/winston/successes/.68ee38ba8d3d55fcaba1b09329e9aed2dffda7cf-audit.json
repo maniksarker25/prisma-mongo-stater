@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Projects\\prisma\\logs\\winston\\successes\\.68ee38ba8d3d55fcaba1b09329e9aed2dffda7cf-audit.json",
+    "files": [
+        {
+            "date": 1733288840074,
+            "name": "D:\\Projects\\prisma\\logs\\winston\\successes\\phu-2024-04-12-11-success.log",
+            "hash": "257bad7330d8ad8aeb18dea2affa09b94e492495704d6854b53a4fc0e08993d8"
+        },
+        {
+            "date": 1733292286970,
+            "name": "D:\\Projects\\prisma\\logs\\winston\\successes\\phu-2024-04-12-12-success.log",
+            "hash": "5488db4bc492d60b5657f61d51ac9b3b69a776c66c1243aa3f1ed86e280ba3ac"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Projects\\MS-Health-Care-Server\\logs\\winston\\errors\\.94cf66f0d39a326a13fa47605ef4e794fd2e91a2-audit.json",
+    "files": [
+        {
+            "date": 1733216263806,
+            "name": "D:\\Projects\\MS-Health-Care-Server\\logs\\winston\\errors\\phu-2024-03-12-14-error.log",
+            "hash": "035fa60fb378125c0d7838aacf60ae8accab56acbc8b1ba5f5138604e9a27d7f"
+        },
+        {
+            "date": 1733216412174,
+            "name": "D:\\Projects\\MS-Health-Care-Server\\logs\\winston\\errors\\phu-2024-03-12-15-error.log",
+            "hash": "cc235c7c739f81bf90578b049d3122ac7a14a1b1ce3e80da460f86b7eaf9b9be"
+        },
+        {
+            "date": 1733221799583,
+            "name": "D:\\Projects\\MS-Health-Care-Server\\logs\\winston\\errors\\phu-2024-03-12-16-error.log",
+            "hash": "c76d52447ce3c5f36f3daf863bdb9ad69a56d3a0f761a88e8f420ac7a4f4e56e"
+        },
+        {
+            "date": 1733224087697,
+            "name": "D:\\Projects\\MS-Health-Care-Server\\logs\\winston\\errors\\phu-2024-03-12-17-error.log",
+            "hash": "b22506025991654ae8780e9db2098b94073d9838f08ac45be839f6ab8b6326d2"
+        }
+    ],
+    "hashType": "sha256"
+}
