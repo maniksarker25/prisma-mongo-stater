@@ -14,6 +14,16 @@
             "date": 1733292286975,
             "name": "D:\\Projects\\prisma\\logs\\winston\\errors\\phu-2024-04-12-12-error.log",
             "hash": "621a5851faaa5a43d9033d7429eb49b2e2ba67c9d06265e42f5f084400f03e87"
+        },
+        {
+            "date": 1733299585013,
+            "name": "D:\\Projects\\prisma\\logs\\winston\\errors\\phu-2024-04-12-14-error.log",
+            "hash": "e765e083d373577dafc18537ce6bcee431f7328ead70a9abe5beff9d4210e214"
+        },
+        {
+            "date": 1733303598428,
+            "name": "D:\\Projects\\prisma\\logs\\winston\\errors\\phu-2024-04-12-15-error.log",
+            "hash": "453c949cdd573e39b7b73f4a405aee064e3f009174fd2443054d9a2811799922"
         }
     ],
     "hashType": "sha256"

@@ -16,9 +16,43 @@ const registerUser = catchAsync(async (req, res) => {
     data: result,
   });
 });
+const verifyCode = catchAsync(async (req, res) => {
+  const result = await UserService.verifyCode(
+    req?.body?.email,
+    req?.body?.verifyCode
+  );
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Successfully verified your account with email",
+    data: result,
+  });
+});
+const resendVerifyCode = catchAsync(async (req, res) => {
+  const result = await UserService.resendVerifyCode(req?.body?.email);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Verify code send to your email inbox",
+    data: result,
+  });
+});
 
+const getMyProfile = catchAsync(async (req, res) => {
+  const result = await UserService.getMyProfile(req.user);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Successfully retrieved your data",
+    data: result,
+  });
+});
 const UserController = {
   registerUser,
+  verifyCode,
+  resendVerifyCode,
+  getMyProfile,
 };
 
 export default UserController;

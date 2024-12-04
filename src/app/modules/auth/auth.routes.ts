@@ -3,8 +3,8 @@ import validateRequest from "../../middlewares/validateRequest";
 
 import auth from "../../middlewares/auth";
 import authControllers from "./auth.controller";
-import { USER_ROLE } from "../user/user.constant";
 import authValidations from "./auth.validation";
+import { UserRole } from "@prisma/client";
 
 const router = Router();
 
@@ -20,13 +20,13 @@ router.post(
 );
 router.post(
   "/change-password",
-  auth(USER_ROLE.user, USER_ROLE.player, USER_ROLE.team, USER_ROLE.superAdmin),
+  auth(UserRole.ADMIN, UserRole.SUPER_ADMIN, UserRole.USER),
   validateRequest(authValidations.changePasswordValidationSchema),
   authControllers.changePassword
 );
 router.post(
   "/refresh-token",
-  auth(USER_ROLE.user, USER_ROLE.player, USER_ROLE.team, USER_ROLE.superAdmin),
+  auth(UserRole.ADMIN, UserRole.SUPER_ADMIN, UserRole.USER),
   validateRequest(authValidations.refreshTokenValidationSchema),
   authControllers.refreshToken
 );

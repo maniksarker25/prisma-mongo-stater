@@ -174,12 +174,15 @@ const changePasswordIntoDB = async (
   }
 
   const isPasswordMatched = await bcrypt.compare(
-    payload?.newPassword,
+    payload?.oldPassword,
     user?.password
   );
 
   if (!isPasswordMatched) {
-    throw new AppError(httpStatus.BAD_REQUEST, "Password does not matched");
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      "Current password does not matched"
+    );
   }
   //hash new password
   const newHashedPassword = await bcrypt.hash(
