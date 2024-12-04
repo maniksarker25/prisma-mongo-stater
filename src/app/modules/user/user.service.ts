@@ -1,6 +1,6 @@
 import httpStatus from "http-status";
 import AppError from "../../errors/appError";
-import { Admin, NormalUser, User, UserRole } from "@prisma/client";
+import { NormalUser, UserRole } from "@prisma/client";
 import prisma from "../../utils/prisma";
 import bcrypt from "bcrypt";
 import sendEmail from "../../utils/sendEmail";
@@ -111,6 +111,9 @@ const getMyProfile = async (userData: JwtPayload) => {
   if (userData.role === UserRole.USER) {
     result = await prisma.normalUser.findUnique({
       where: { email: userData.email },
+      // include: {
+      //   user: true,
+      // },
     });
   } else if (userData.role === UserRole.ADMIN) {
     result = await prisma.admin.findUnique({
