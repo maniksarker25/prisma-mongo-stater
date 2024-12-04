@@ -6,7 +6,7 @@ const { combine, timestamp, label, printf } = format;
 
 //Customm Log Format
 
-const myFormat = printf(({ level, message, label, timestamp }) => {
+const myFormat = printf(({ level, message, label, timestamp }: any) => {
   const date = new Date(timestamp);
   const hour = date.getHours();
   const minutes = date.getMinutes();
@@ -16,7 +16,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 
 const logger = createLogger({
   level: "info",
-  format: combine(label({ label: "PH" }), timestamp(), myFormat),
+  format: combine(label({ label: "Prisma" }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -35,7 +35,7 @@ const logger = createLogger({
   ],
 });
 
-const errorlogger = createLogger({
+const errorLogger = createLogger({
   level: "error",
   format: combine(label({ label: "PH" }), timestamp(), myFormat),
   transports: [
@@ -56,4 +56,4 @@ const errorlogger = createLogger({
   ],
 });
 
-export { logger, errorlogger };
+export { logger, errorLogger };
