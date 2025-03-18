@@ -59,7 +59,7 @@ const auth = (...requiredRoles: UserRole[]) => {
         select: { id: true },
       });
     } else if (role === UserRole.ADMIN) {
-      profileData = await prisma.admin.findUnique({
+      profileData = await prisma.superAdmin.findUnique({
         where: { userId: id },
         select: { id: true },
       });

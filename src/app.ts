@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(urlencoded({ extended: true }));
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Ms health care server");
+  res.send("Welcome to prisma studio");
 });
 
 app.use("/", router);

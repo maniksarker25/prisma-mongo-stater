@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Solution Squad Projects\\prisma-mongo-stater\\logs\\winston\\successes\\.61da71a93dcce04911e6c8497819e3d718ffc362-audit.json",
+    "files": [
+        {
+            "date": 1742267767916,
+            "name": "D:\\Solution Squad Projects\\prisma-mongo-stater\\logs\\winston\\successes\\phu-2025-18-03-09-success.log",
+            "hash": "04f7a959bd1b7869536c094df39b85834ddd532afb2f30eafd554301a972eb6c"
+        }
+    ],
+    "hashType": "sha256"
+}

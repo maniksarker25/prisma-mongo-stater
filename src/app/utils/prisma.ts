@@ -28,15 +28,15 @@ const prisma = new PrismaClient({
 //   console.log("------------------------------------------------");
 //   console.log("Duration: " + e.duration + "ms");
 // });
-prisma.$on("warn", (e) => {
+prisma.$on("warn", (e: any) => {
   console.log(e);
 });
 
-prisma.$on("info", (e) => {
+prisma.$on("info", (e: any) => {
   console.log(e);
 });
 
-prisma.$on("error", (e) => {
+prisma.$on("error", (e: any) => {
   console.log(e);
 });
 
