@@ -15,20 +15,6 @@ const seedSuperAdmin = async () => {
     }
 
     const hashedPassword = await bcrypt.hash("superadmin", 12);
-    // const createSuperAdmin = await prisma.user.create({
-    //   data: {
-    //     email: "super@gmail.com",
-    //     password: hashedPassword,
-    //     role: UserRole.SUPER_ADMIN,
-
-    //     superAdmin: {
-    //       create: {
-    //         name: "Super Admin",
-    //         email: "super@gmail.com",
-    //       },
-    //     },
-    //   },
-    // });
     const createSuperAdmin = await prisma.user.create({
       data: {
         email: "super@gmail.com",
