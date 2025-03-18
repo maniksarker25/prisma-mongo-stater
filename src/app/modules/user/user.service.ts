@@ -116,7 +116,7 @@ const getMyProfile = async (userData: JwtPayload) => {
       // },
     });
   } else if (userData.role === UserRole.ADMIN) {
-    result = await prisma.admin.findUnique({
+    result = await prisma.superAdmin.findUnique({
       where: { email: userData.email },
     });
   }
