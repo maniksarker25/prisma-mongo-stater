@@ -1,9 +1,4 @@
-import {
-  PrismaClientKnownRequestError,
-  PrismaClientValidationError,
-} from "@prisma/client/runtime/library";
 import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
-import httpStatus from "http-status";
 import config from "../config";
 import AppError from "../errors/appError";
 import { errorLogger } from "../utils/logger";
